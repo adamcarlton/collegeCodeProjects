@@ -1,0 +1,16 @@
+mkdir $1
+mkdir $1/Dir2
+touch $1/Dir2/File2
+cd $1/
+mkdir -p Dir1/Dir3/Dir4
+touch Dir1/File1
+touch Dir1/Dir3/Dir4/File3
+touch Dir1/Dir3/Dir4/File4
+chmod 640 Dir2/File2
+chmod 775 Dir2
+chmod 666 Dir1/Dir3/Dir4/File4
+chmod 200 Dir1/Dir3/Dir4/File3
+chmod 750 Dir1/Dir3/Dir4
+chmod 000 Dir1/Dir3
+chmod 400 Dir1/File1
+chmod 770 Dir1

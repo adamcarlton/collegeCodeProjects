@@ -1,0 +1,23 @@
+insert 100
+traverse
+insert 200
+traverse
+insert 300
+traverse
+insert 350
+traverse
+insert 325
+traverse
+insert 250
+traverse
+insert 275
+traverse
+insert 265
+traverse
+insert 268
+traverse
+insert 269
+traverse
+insert 270
+traverse
+exit

@@ -1,0 +1,43 @@
+body{
+    background-color: lightskyblue
+}
+
+h1{
+    color: orangered;
+    text-align: center;
+}
+
+h4{
+    color: orangered;
+    text-align: center;
+}
+
+ul{
+    list-style-type: square;
+    list-style-position: outside;
+}
+
+nav{
+    background: white;
+    border-style: double;
+    border-width: thick;
+}
+
+#git{
+    color: fuchsia;
+}
+
+#authorParagraph{
+    color: blueviolet;
+    text-align:right;
+}
+#quoteParagraph{
+    color: blueviolet;
+    text-align:right;
+    font-style: italic;
+}
+
+footer{
+    color: red;
+    font-size: 12px;
+}

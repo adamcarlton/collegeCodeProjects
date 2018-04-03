@@ -1,0 +1,22 @@
+body{
+    text-align: center;
+    background: darkred
+}
+
+canvas{
+    border-style: double;
+    border-width: 10px;
+    background: cyan
+}
+
+h1, h2{
+    color: white
+}
+
+select{
+    background: black;
+    color: white
+}
+span{
+    color: white
+}

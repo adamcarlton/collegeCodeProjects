@@ -1,0 +1,16 @@
+#!/bin/bash
+
+list=$(cat valid_list)
+
+for i in $list ; do
+   if [[ -f $i/pass ]] ; then
+      echo "Skipping $i (got a pass previously)"
+      continue
+   fi
+   ./run_one $i
+   #./run_one_w_image $i
+   #pnmtopng sandbox/3H.pnm > sandbox/$i.png
+done
+
+num_passed=$(ls -1 */pass | wc -l)
+echo "You have passed $num_passed out of 36 tests."

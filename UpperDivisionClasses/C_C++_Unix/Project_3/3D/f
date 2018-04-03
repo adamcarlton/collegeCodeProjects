@@ -1,0 +1,5 @@
+make
+./proj3D 3C_input.pnm output.pnm
+pnmtopng < output.pnm > output.png
+open output.png
+make clean

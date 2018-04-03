@@ -1,0 +1,24 @@
+insert 100
+insert 70
+insert 200
+insert 44
+insert 220
+insert 75
+insert 170
+insert 42
+insert 55
+insert 230
+insert 73
+insert 160
+insert 215
+insert 80
+insert 40
+insert 72
+insert 79
+insert 85
+insert 250
+insert 90
+traverse
+delete 55
+traverse
+exit

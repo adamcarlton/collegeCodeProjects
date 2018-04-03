@@ -1,0 +1,18 @@
+250x250 timing was 0.003404 seconds
+500x500 timing was 0.019597 seconds
+1000x1000 timing was 0.083432 seconds
+2000x2000 timing was 0.362331 seconds
+
+Naturally in this assignment I think we all expected the timings to go up as our image sizes increased
+however I'm surprised at the jump from 1000x1000 to 2000x2000 being so drastic. I figured the small
+images would've been a very small time but for the jump to increase from .08 to around 4x that for
+2000x2000 was surprising. I think I know where I can go back and optimize my code and I'm sad that
+I didn't do that in the beginning because that was something Eric really stressed in 314. However,
+since we're working on relatively small images timing isn't becoming an issue because it's under 1
+second. This can easily get out of hand with larger images and optimizations will definitely be needed
+to cut down on time. The optimizations I'm thinking of would be inside of my buffer manipulation in my 
+for loops. Instead of assigning output->getBuffer() to a variable and calling that variable, I'm
+making a function call everytime for the original filters which is much slower. Also instead of indexing
+by calling j*width+i, put that in a variable as well and call the variable in the indexing. But all in all
+these findings show that as the image gets larger and larger timing will increase sometimes faster than 
+expected and this can lead to some sizeable performance problems if the image is too large.

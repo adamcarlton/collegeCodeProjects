@@ -1,0 +1,27 @@
+body{
+    text-align : center;
+    background-color: orange
+}
+
+canvas{
+    border-style: double;
+    border-width: 10px
+}
+
+h1, h2{
+    color: navy;
+}
+
+button{
+    color: navy
+}
+
+select{
+    background: navy;
+    color: white
+}
+
+input{
+    background: navy;
+    color: white
+}

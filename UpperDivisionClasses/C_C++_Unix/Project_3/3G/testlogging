@@ -1,0 +1,30 @@
+Invert: about to update input1
+LRConcat: about to update input1
+Constant Color: about to execute
+Constant Color: done executing
+LRConcat: done updating input1
+LRConcat: about to update input2
+Invert: about to update input1
+Transpose: about to update input1
+Crop: about to update input1
+PNMreader: about to execute
+PNMreader: done executing
+Crop: done updating input1
+Crop: about to execute
+Crop: done executing with time: 0.481282
+Transpose: done updating input1
+Transpose: about to execute
+Transpose: done executing with time: 0.109508
+Invert: done updating input1
+Invert: about to execute
+Invert: done executing with time: 0.109176
+LRConcat: done updating input2
+LRConcat: about to execute
+LRConcat: done executing with time: 0.647066
+Invert: done updating input1
+Invert: about to update input2
+Constant Color: about to execute
+Constant Color: done executing
+Invert: done updating input2
+Invert: about to execute
+Invert: done executing with time: 0.175528

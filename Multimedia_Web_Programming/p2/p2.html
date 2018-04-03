@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Project 2</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Adam Carlton">
+        <meta name="description" content="HTML for project 2">
+        <link rel="stylesheet" href="p2.css">
+    </head>
+    <main>
+        <body>
+            <h1>CIS-115 Fall Term 2017 | Project 2</h1>
+            <h4>The current time is: <span id="currentTime"></span></h4>
+            <div id="wrapper">
+                <button id="currentLoc">Map Current Location</button><br><br>
+                <select id="dropdown">
+                </select>
+            </div>
+            <p>Location: <span id="location"></span> | Latitude: <span id="latitude"></span> | Longitude: <span id="longitude"></span></p>
+            <div id="googleMap">
+                Loading...<div class="load"></div>
+            </div>
+            <br>
+            <div id="btnWrapper">
+                <button id="centerBtn">Center</button>
+            </div>
+        </body>
+    </main>
+    <script src="p2.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCBmQxOnIP45HTc9pn2rxyKro1xvzlRqFs"></script>
+</html>

@@ -1,0 +1,46 @@
+Entered program from ndaniels
+
+Invert: about to update input1
+Invert: about to update input1
+Shrinker: about to update input1
+TBConcat: about to update input1
+LRConcat: about to update input1
+Shrinker: about to update input1
+PNMreader: about to execute
+PNMreader: done executing
+Shrinker: done updating input1
+Shrinker: about to execute
+Shrinker: done executing with time: 0.004070
+LRConcat: done updating input1
+LRConcat: about to update input2
+Crop: about to update input1
+PNMreader: about to execute
+PNMreader: done executing
+Crop: done updating input1
+Crop: about to execute
+Crop: done executing with time: 0.002458
+LRConcat: done updating input2
+LRConcat: about to execute
+LRConcat: done executing with time: 0.005470
+TBConcat: done updating input1
+TBConcat: about to update input2
+TBConcat: done updating input2
+TBConcat: about to execute
+TBConcat: done executing with time: 0.012300
+Shrinker: done updating input1
+Shrinker: about to execute
+Shrinker: done executing with time: 0.003164
+Invert: done updating input1
+Invert: about to update input2
+Crop: about to update input1
+PNMreader: about to execute
+PNMreader: done executing
+Crop: done updating input1
+Crop: about to execute
+Crop: done executing with time: 0.002645
+Invert: done updating input2
+Invert: about to execute
+Invert: done executing with time: 0.002295
+Invert: done updating input1
+Invert: about to execute
+Invert: done executing with time: 0.001095

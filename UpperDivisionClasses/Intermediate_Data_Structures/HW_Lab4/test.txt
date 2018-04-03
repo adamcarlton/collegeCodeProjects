@@ -1,0 +1,7 @@
+insert 10
+insert 5
+insert 20
+insert 30
+traverse
+insert 25
+traverse

@@ -1,0 +1,43 @@
+#!/bin/bash
+
+if [[ $# != 1 ]] ; then
+   echo "Usage: $0 <username>"
+   exit 1
+fi
+
+if [[ ! -d $1 ]] ; then
+   echo "Cannot locate user $1"
+   echo "Note that this script must be run from the 3H directory"
+   exit 1
+fi
+ 
+if [[ ! -f $1/stress_test.C ]] ; then
+   echo "Cannot locate stress test $1/stress_test.C"
+   echo "Note that this script must be run from the 3H directory"
+   exit 1
+fi
+ 
+echo "Running $1..."
+
+cd sandbox
+rm -f stress_test.C my_checksum my_exception *.o
+ln -s ../${1}/stress_test.C .
+make
+./stress_test $1 WRITE_SOMETHING
+
+if [[ -f my_checksum ]] ; then
+    echo "I think you did an image test (not an exception test)"
+    cp my_checksum ../$1/checksum
+    cp 3H.pnm ../$1/
+    echo "Your 3H.pnm is in $1"
+    echo "Copy it to your ix home directory with :"
+    echo "    scp 3H.pnm $1@ix.cs.uoregon.edu:~/public_html"
+    exit 0
+elif [[ -f my_exception ]] ; then
+    echo "I think you did an exception test (not an image test)"
+    cp my_exception ../$1/exception
+    exit 0
+else
+    echo "Could not find checksum or exception .. crash?"
+    exit 1
+fi
