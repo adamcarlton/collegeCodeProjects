@@ -20,7 +20,7 @@ public class aCarltonHW2{
         }
 
         for(int i = 1; i <= nodeIter; i++){
-            for(int j = 1; i <= nodeIter; i++){
+            for(int j = 1; j <= nodeIter; j++){
                 adjMatrix[i][j] = 0;
             }
         }
